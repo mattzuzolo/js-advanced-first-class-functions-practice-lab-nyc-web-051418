@@ -14,6 +14,8 @@ function logDriversByHometown(driversArray, hometown) {
   })
 };
 
+
+//need to use slice().sort() so that sort is NONDESTRUCTIVE
 function driversByRevenue(driversArray) {
   return driversArray.slice().sort(function (one, two) {
       return one.revenue - two.revenue;
@@ -21,6 +23,7 @@ function driversByRevenue(driversArray) {
   //RETURN SOMETHING
 };
 
+//need to use slice().sort() so that sort is NONDESTRUCTIVE
 function driversByName(driversArray) {
   return driversArray.slice().sort(function (one, two) {
       return one.name.localeCompare(two.name);
